@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Text Analyzer</title>
+  <title>Pig Latin Translator</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -9,16 +9,17 @@
 </head>
 <body>
   <div class="container">
-      <h2>Text Analyzer</h2>
+      <h1>Pig Latin Translator</h1>
+      <br>
     <form id="pig">
       <div class="form-group">
-        <p>Input a text passage to get a total word count:</p>
+        <h6>Input a text or passage to translate to pig latin:</h6>
         <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
         <br>
-        <button type="submit" class="btn btn-success">Submit Survey</button>
+        <button type="submit" class="btn btn-success">Submit</button>
       </div>
     </form>
-    <p>Pig Latin: <span id="pigLatin"></span></p>
+    <h6>Pig Latin: <span id="pigLatin"></span></h6>
   </div>
 </body>
 </html>
