@@ -83,3 +83,19 @@ function hexConverter(value) {
 
 
 // UI Logic
+
+
+$(document).ready(function(){
+  $("form#pig").submit(function(event){
+    event.preventDefault();
+    const passage = $("#text-passage").val();
+    let pigResult = "";
+    let array = passage.split(' ');
+    for(let i = 0; i < array.length; i++)
+    {
+      pigResult += " " + pigLatin(array[i].replace(/[,.]/g, ""));
+    }
+
+    $("#pigLatin").html(pigResult);
+  });
+});
