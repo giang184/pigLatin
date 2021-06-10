@@ -7,9 +7,21 @@ function checkVowel(text) {
     return false;
   }
 }
+function noInputtedWord() {
+  for (let i=0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+    if (arguments[i].trim().length === 0) {
+      return true;
+    }
+  }
+  return false;
+}
 // Business Logic
 function pigLatin(word) {
-  if (checkVowel(word[0])) {
+  if(noInputtedWord(word)){
+    return "";
+  }
+  else if (checkVowel(word[0])) {
     return word + "way";
   }
   else {    
@@ -89,6 +101,8 @@ $(document).ready(function(){
   $("form#pig").submit(function(event){
     event.preventDefault();
     const passage = $("#text-passage").val();
+    const binaryNum = $("#binaryNumber").val();
+    const hexNum = $("#hexNumber").val();
     let pigResult = "";
     let array = passage.split(' ');
     for(let i = 0; i < array.length; i++)
@@ -97,5 +111,8 @@ $(document).ready(function(){
     }
 
     $("#pigLatin").html(pigResult);
+    $("#binaryNum").html(binaryConverter(binaryNum));
+    $("#hexNum").html(hexConverter(hexNum));
+    $(".result").show();
   });
 });

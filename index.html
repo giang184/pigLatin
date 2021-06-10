@@ -7,19 +7,55 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </head>
-<body>
+<body class = "background">
   <div class="container">
-      <h1>Pig Latin Translator</h1>
-      <br>
+ 
     <form id="pig">
       <div class="form-group">
-        <h6>Input a text or passage to translate to pig latin:</h6>
+        <h1 class="center">Pig Latin Translator</h1>
+        <br>
+        <h5>Input a text or passage to translate to pig latin:</h5>
         <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
+        <br>
+        <div class="result">
+          <h6>Pig Latin:<br></h6>
+          <span id="pigLatin"></span>
+        </div>
+        <br>
+        <br>
+        <h1 class="center">Number Converters</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <h5>binary number form:</h5>
+            <input id="binaryNumber" name="binaryNumber" type="text"></input>
+            <br>
+            <div class="result">
+              <h6>Decimal form:<br></h6>
+              <span id="binaryNum"></span>
+            </div>
+            <br>
+          </div>
+          <div class="col-md-4">
+            <h5>Hexadecimal number form:</h5>
+            <input id="hexNumber" name="hexNumber" type="text"></input>
+            <br>
+            <div class="result">
+              <h6>Decimal form:<br></h6>
+              <span id="hexNum"></span>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
         <br>
         <button type="submit" class="btn btn-success">Submit</button>
       </div>
     </form>
-    <h6>Pig Latin: <span id="pigLatin"></span></h6>
+    
+
+    
   </div>
 </body>
 </html>

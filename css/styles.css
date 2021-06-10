@@ -1,0 +1,12 @@
+.center {
+  text-align: center;
+}
+.background {
+  background-color:  rgb(168, 211, 248);
+}
+.result{
+  display: none;
+  background-color: rgb(245, 211, 171);
+  border: 1px solid rgb(10, 13, 48);
+  padding: 10px;
+}
