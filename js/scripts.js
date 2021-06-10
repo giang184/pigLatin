@@ -74,6 +74,8 @@ function hexConverter(value) {
     else {
       sum += parseInt(value[index])*Math.pow(16, power);
     }
+    console.log(power);
+    console.log(sum);
     power++;
   }
   return sum;
